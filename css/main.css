@@ -1,0 +1,69 @@
+button.slbutton {
+    font-size: 16px;
+    font-family: "Comic Sans MS","微软雅黑", cursive, sans-serif;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    height: inherit;
+    width: inherit;
+    background-color: lightblue;
+    opacity: 0.9;
+}
+div.sltop {
+    font-size: 32px;
+    font-family: "Comic Sans MS","微软雅黑", cursive, sans-serif;
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    background-image: linear-gradient(120deg,  #EBF5FF, #9EFFF8);
+    background-size: cover;
+    opacity: 0.8;
+}
+a {
+    font-family: "Comic Sans MS","微软雅黑", cursive, sans-serif;
+    font-size: 16px;
+}
+a:link {
+    text-decoration: none;
+    color: azure;
+}
+/* 已访问的链接 */
+a:visited {
+    text-decoration: none;
+    color: aliceblue;
+}
+/* 鼠标悬停链接 */
+a:hover {
+    text-decoration: none;
+    color: mintcream;
+}
+/* 已选择的链接 */
+a:active {
+    text-decoration: none;
+    color: antiquewhite;
+}
+div.slcontent {
+    font-family: "Comic Sans MS","微软雅黑", cursive, sans-serif;
+    font-size: 16px;
+    height: inherit;
+    width: inherit;
+    background-color: whitesmoke;
+    opacity: 0.8;
+}
+body.slbasic {
+    margin: 0px;
+    border: 0px;
+    background-color: white;
+    font-family: "Comic Sans MS","微软雅黑", cursive, sans-serif;
+    font-size: 16px;
+    height: 100%;
+    width: 100;
+    padding: 0;
+    opacity: 0.8;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    opacity: 0.8;
+}

@@ -1,0 +1,50 @@
+<!Doctype Html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#FFFFFF">
+        <meta name="color-scheme" content="light"> 
+        <script>
+            var color=0;
+            let scheme = document.querySelector('meta[name="theme-color"]');
+            function Theme_Color(){
+                scheme.setAttribute("content",`hsl(` + color.toString() + ` 50% 80%)`);
+                color+=5;
+                if(color>360){
+                    color=0;
+                }
+            }
+            setInterval(Theme_Color,50);
+        </script>
+        <title >SheepCode的主页</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="favicon.jpg"type="image/x-icon"rel="shortcut icon"/>
+        <link href="favicon.jpg"type="image/x-icon"rel="icon"/>
+    </head>
+    <body class="slbasic">
+        <div class="sltop">
+            SheepCode的主页!
+            <br>
+            <button class="slbutton" onclick="window.location.href='http://search.sheepmc.ml'">导航</button>
+            <button class="slbutton" onclick="window.location.href='http://webdrive.sheepmc.ml'">云盘</button>
+            <button class="slbutton" onclick="window.location.href='http://blog.sheepmc.ml'">博客</button>
+            <button class="slbutton" onclick="window.location.href='./clock/index.html'">时钟</button>
+            <br>
+            <button class="slbutton" onclick="window.location.href='./Search/index.html'">搜索</button>
+            <button class="slbutton" onclick="window.location.href='./markdowneditor/index.html'">MarkDown编辑器</button>
+            <button class="slbutton" onclick="window.location.href='./SheepWebAudioEditor/index.html'">SheepWeb音频编辑器</button>
+            <button class="slbutton" onclick="window.location.href='./windows11/index.html'">Windows11虚拟机</button>
+            <br>
+            <button class="slbutton" onclick="window.location.href='./CPS/index.html'">CPS测试</button>
+            <button class="slbutton" onclick="window.location.href='./piano/index.html'">在线钢琴</button>
+            <button class="slbutton" onclick="window.location.href='./jsproxy/index.html'">ILOVE***</button>
+        </div>
+        <div class="slcontent">
+            欢迎来到SheepCode的主页呀~
+        </div>
+        <div id="Render">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <script type="text/javascript" color="135,206,235" opacity='0.8' zIndex="-2" count="520" src="./canvas/dist/canvas-nest.js"></script>
+    </body>
+</html>

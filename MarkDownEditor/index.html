@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SheepMarkDown Editor</title>
+    <link type="text/css" href="lib/codemirror/codemirror.css">
+    <script type="text/javascript" src="examples\js\jquery.min.js"></script>
+    <script type="text/javascript" src="editormd.js"></script>
+    <link rel="stylesheet" href="css/editormd.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="slbasic">
+    <div id="layout">
+        <div class="sltop">SheepMarkDown Editor</div>
+        <div class="btns" style="margin:0;text-align: center;">
+            <button id="create" class="slbutton">创建文件</button>
+            <button id="remove" class="slbutton">移除文件</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var testEditormd;
+        $(function() {
+            $("#create").click(function() {
+
+                $("#layout").append("<div id=\"TestFile\"></div>");
+
+                TestFile = editormd("TestFile", {
+                    width: "90%",
+                    height: 640,
+                    emoji: true,
+                    markdown: "### SheepMarkDown Editor",
+                    path: 'lib/'
+
+                });
+
+            });
+
+            $("#remove").click(function() {
+                TestFile.editor.remove();
+            });
+        });
+    </script>
+</body>
+
+</html>
